@@ -57,7 +57,7 @@
 :*?o:-pt::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ;block break line
 
-;; used to break paragraphs instead of p block - shorter distance
+;; used to break paragraphs instead of p block - shorter heigt
 :*?o:-bl::<span style="display:block; margin-bottom:1em"></span>
 
 ;; for these hotkeys one would highlight the word/words and press
@@ -89,13 +89,23 @@ Send, <b>^v</b><br>`n
 return
 
 
-;; u-list with normal margin
 ;; cut or copy items to work on them - one must first sanitize the
 ;; entries (remove trailing semicolons or periods)
-:*?o:-mlist::
+
+;; 2 functions on making a list
+;; -lwai for editors with auto indent
+;; -lnai for editors that don't have it
+
+:*?o:-lnai::
 Send, <br>`n<ul>
 ListMaker()
 send, `n</ul>`n<br>
+return
+
+:*?o:-lwai::
+Send, <br>`n<ul>
+ListMaker2()
+send, `n{BS}</ul>`n<br>
 return
 
 
@@ -114,6 +124,35 @@ ListMaker(){
 
     for idx, val in trimmedList{
         sendinput, `n`t<li>`n`t`t%val%`r`n`t</li>
+
+		;add newline after closing li except the last one
+		if (idx != trimmedList.Length()){
+            sendinput, `n
+        }
+    }
+}
+
+ListMaker2(){
+    itemList := StrSplit(clipboard, "`r`n")
+    trimmedList := []
+
+    ;; clean the list and remove empty entries and trim spaces
+    for idx, val in itemList{
+        if (val = ""){
+            Continue
+        }
+        
+        trimmedList.Push(trim(val))
+    }
+
+    for idx, val in trimmedList{
+        if (idx = 1){
+            sendinput, `n`t
+        }else{
+            sendinput, `n
+        }
+
+        sendinput, <li>`n`t%val%`r`n{BS}</li>
 
 		;add newline after closing li except the last one
 		if (idx != trimmedList.Length()){
