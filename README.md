@@ -10,3 +10,6 @@ I use this for encoding, and for my data entry work. Also *I'm learning git and 
 Since I use this script mainly for ***data entry***, the text editor that I use is **notepad++**. This script provides a few hotkeys to add html elements such as **bold** and *italic* and a function to create a list.
 
 Also, *hotstrings* are used a lot for data entry purposes. The main problem may arise from the fact that all keys were made using an ***italian*** keyboad. So, if someone is going to use this... they are going to have to edit the bindings as they may not make any sense on your current layout.
+
+## to do
+- [ ] update script to AutoHotkey v2
