@@ -61,7 +61,7 @@
 :*?o:-bl::<span style="display:block; margin-bottom:1em"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Left 48}{Enter 2}
 
 ;; for the chatbot
-:*?o:-bot::descrizion più elaborata di:
+:*?o:-bot::descrizione più elaborata di:
 
 ;; for these hotkeys one would highlight the word/words and press
 ;; the hotkeys
