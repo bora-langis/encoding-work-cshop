@@ -22,7 +22,7 @@
 :*?o:-o0::°
 :*?o:-oo::º
 :*?o:-i.::ï
-:*?o:-dia.::Ø
+:*?o:-dia::Ø
 
 ;; for the article title -t
 :*?o:-tep::Eau De Parfum
@@ -52,13 +52,16 @@
 :*?o:-ufl::Flaconcini
 
 ;; html elements
-:*?o:-br::<br>
-:*?o:-pp::<p></p>
+:*?o:-br::<br>`n
+:*?o:-pp::<p></p>{Enter 2}
 :*?o:-pt::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ;block break line
 
 ;; used to break paragraphs instead of p block - shorter heigt
-:*?o:-bl::<span style="display:block; margin-bottom:1em"></span>
+:*?o:-bl::<span style="display:block; margin-bottom:1em"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Left 48}{Enter 2}
+
+;; for the chatbot
+:*?o:-bot::descrizion più elaborata di:
 
 ;; for these hotkeys one would highlight the word/words and press
 ;; the hotkeys
