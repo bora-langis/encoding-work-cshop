@@ -67,7 +67,7 @@
 :*?o:-aaa::
 Send, <p></p>{Enter 2}
 Send, <b>Colore</b><br>{Enter}<p></p>{Enter 2}
-Send, <b>Misura</b><br>{Enter 2}
+Send, <b>Misura</b><br>{Enter 3}
 Send, marca
 return
 
