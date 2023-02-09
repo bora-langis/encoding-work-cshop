@@ -63,6 +63,14 @@
 ;; for the chatbot
 :*?o:-bot::descrizione più elaborata di:
 
+;; default skeleton for article
+:*?o:-aaa::
+Send, <p></p>{Enter 2}
+Send, <b>Colore</b><br>{Enter}<p></p>{Enter 2}
+Send, <b>Misura</b><br>{Enter 2}
+Send, marca
+return
+
 ;; for these hotkeys one would highlight the word/words and press
 ;; the hotkeys
 
