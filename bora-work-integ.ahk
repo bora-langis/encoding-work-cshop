@@ -22,6 +22,7 @@
 :*?o:-o0::°
 :*?o:-oo::º
 :*?o:-i.::ï
+:*?o:-i"::ì
 :*?o:-dia::Ø
 
 ;; for the article title -t
